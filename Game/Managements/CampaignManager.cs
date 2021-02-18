@@ -10,23 +10,18 @@ namespace Game
     {
         public void NewCampaign(Campaign campaign)
         {
-            Console.WriteLine("Campaign Created!");
+            Console.WriteLine(campaign.campaignName+" Campaign Created!");
         }
 
         public void DeleteCampaign(Campaign campaign)
         {
-            Console.WriteLine("Campaign Deleted!");
+            Console.WriteLine(campaign.campaignName + " Campaign Deleted!");
         }
 
         public void UpdateCampaign(Campaign campaign)
         {
-            Console.WriteLine("Campaign Updated!");
+            Console.WriteLine(campaign.campaignName + " ampaign Updated!");
         }
 
-        internal void Order()
-        {
-            Console.WriteLine("Sold!");
-
-        }
     }
 }

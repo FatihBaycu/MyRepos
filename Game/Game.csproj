@@ -43,20 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Campaign.cs" />
-    <Compile Include="CampaignManager.cs" />
-    <Compile Include="Gamer.cs" />
-    <Compile Include="GamerManager.cs" />
-    <Compile Include="ICampaignSerivce.cs" />
-    <Compile Include="IGameService.cs" />
-    <Compile Include="OrderManager.cs" />
+    <Compile Include="Entities\Campaign.cs" />
+    <Compile Include="Managements\CampaignManager.cs" />
+    <Compile Include="Entities\Game.cs" />
+    <Compile Include="Entities\Gamer.cs" />
+    <Compile Include="Managements\GameManager.cs" />
+    <Compile Include="Managements\GamerManager.cs" />
+    <Compile Include="Services\IGamerService.cs" />
+    <Compile Include="Services\ICampaignSerivce.cs" />
+    <Compile Include="Services\IGameService.cs" />
+    <Compile Include="Managements\OrderManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserValidationManager.cs" />
-    <Compile Include="IUserValidationService.cs" />
+    <Compile Include="Managements\UserValidationManager.cs" />
+    <Compile Include="Services\IOrderService.cs" />
+    <Compile Include="Services\IUserValidationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

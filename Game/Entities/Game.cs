@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class OrderManager:CampaignManager
+    class Game
     {
-        public void Sold(Campaign campaign)
-        {
-            Console.WriteLine("Sold!");
-
-        }
+        public string adi{ get; set; }
+        public int id{ get; set; }
+        public int price { get; set; }
     }
 }

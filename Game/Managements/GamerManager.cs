@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class GamerManager : IGameService
+    class GamerManager:IGamerService
     {
         private IUserValidationService _userValidationService;
 
@@ -15,28 +15,28 @@ namespace Game
             _userValidationService = userValidationService;
         }
         
-        public void NewGamer(Gamer gamer)
+        public void Add(Gamer gamer)
         {
             if (_userValidationService.Validate(gamer)==true)
             {
-                Console.WriteLine("Gamer Created!");
+                Console.WriteLine(gamer.adi+ " "+gamer.soyadi+" Gamer Created!");
 
             }
             else
             {
-                Console.WriteLine("Gamer Not Created!!!");
+                Console.WriteLine(gamer.adi + " " + gamer.soyadi + " Gamer Not Created!");
 
             }
         }
 
-        public void UpdateGamer(Gamer gamer)
+        public void Update(Gamer gamer)
         {
-            Console.WriteLine("Gamer Updated!");
+            Console.WriteLine(gamer.adi + " " + gamer.soyadi + " Gamer Updated!");
         }
 
-        public void DeleteGamer(Gamer gamer)
+        public void Delete(Gamer gamer)
         {
-            Console.WriteLine("Gamer Deleted!");
+            Console.WriteLine(gamer.adi + " " + gamer.soyadi + " Gamer Deleted!");
         }
     }
 }

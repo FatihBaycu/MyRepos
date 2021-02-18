@@ -8,8 +8,8 @@ namespace Game
 {
     interface IGameService
     {
-        void NewGamer(Gamer gamer);
-        void UpdateGamer(Gamer gamer);
-        void DeleteGamer(Gamer gamer);
+        void NewGame(Game game);
+        void UpdateGame(Game game);
+        void DeleteGame(Game game);
     }
 }

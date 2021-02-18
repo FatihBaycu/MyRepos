@@ -9,7 +9,7 @@ namespace Game
     class Campaign
     {
         public int campaignId { get; set; }
-        public int campaignName { get; set; }
+        public string campaignName { get; set; }
         public int campaignDate { get; set; }
     }
 }
